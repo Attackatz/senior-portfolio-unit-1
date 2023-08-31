@@ -1,0 +1,33 @@
+print("You are off on your space mission! You've just taken off and left the Earth's atmosphere. Your team is ready for an adventure of a lifetime! The goal of this mission is to try to find life in the universe. As the captain - you now have an important choice. Where do you go?")
+userInput = input("Enter A or B. A) Head towards Mars B) Head into empty space")
+
+if userInput == 'A':
+    print("You've set the spaceship's course for Mars. As you approach, you see the red planet in all its glory. Your crew prepares the rover for landing.")
+    
+    userInput_Mars = input("Where do you want to land on Mars? 1) Olympus Mons - the largest volcano 2) Valles Marineris - a vast canyon")
+    
+    if userInput_Mars == '1':
+        print("You've chosen to land near Olympus Mons. As you explore the area, you find intriguing rock formations that hint at past volcanic activity. Could there be any microbial life forms deep within?")
+    
+    elif userInput_Mars == '2':
+        print("You navigate the ship to land near the Valles Marineris. As you explore the canyon, you find evidence of liquid water in Mars' past. The search for life on Mars becomes even more exciting!")
+    
+    else:
+        print("Invalid choice. Please restart your mission!")
+    
+elif userInput == 'B':
+    print("You decide to venture into the unknown. As you head into empty space, you and your crew witness the breathtaking views of stars, galaxies, and nebulas.")
+    
+    userInput_Space = input("Suddenly, you detect a mysterious signal. What do you do? 1) Follow the signal 2) Continue on your current path")
+    
+    if userInput_Space == '1':
+        print("You decide to follow the signal. As you approach, you discover a previously unknown alien space station. The potential for first contact with extraterrestrial life becomes real!")
+    
+    elif userInput_Space == '2':
+        print("You choose to stay on course, prioritizing the original mission objectives. The wonders of the universe continue to unfold before you.")
+    
+    else:
+        print("Invalid choice. Please restart your journey!")
+    
+else: 
+    print("You entered something wrong - refresh and try again!")
